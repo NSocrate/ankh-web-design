@@ -1,0 +1,317 @@
+/* root variables */
+
+:root {
+    --color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-gray-light: #86848c;
+    --color-gray-dark: #56555e;
+    --color-dark: #27282f;
+    --color-primary: rgb(71, 7, 234);
+    --color-success: rgb(34, 202, 75);
+    --color-danger: rgb(255, 67, 54);
+    --color-warning: rgb(234, 181, 7);
+    --color-purple: rgb(160, 99, 245);
+    --color-info: #0dcaf0;
+    --color-primary-bootstrap:#0d6efd;
+
+    --color-warning-hover: rgb(255, 196, 2);
+    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-success-light: rgb(34, 202, 75, 0.2);
+    --color-danger-light: rgb(255, 67, 54, 0.2);
+    --color-warning-light: rgb(234, 181, 7, 0.2);
+    --color-purple-light: rgb(160, 99, 245, 0.2);
+    --color-info-hover: #1c91ff;
+
+    --card-padding: 1.6rem;
+    --padding-1: 1rem;
+    --padding-2: 8px;
+
+    --card-border-raduis: 1.6rem;
+    --border-raduis-1: 1rem;
+    --border-raduis-2: 6px;
+
+}
+
+/* dark theme variables */
+
+.dark-theme {
+    --color-white: #131316;
+    --color-light: #23232a;
+    --color-dark: #ddd;
+    --color-gray-dark: #adacb5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: var(--color-light);
+    min-height: 100vh;
+    color: var(--color-dark);
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.86rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 0.76rem;
+}
+
+p {
+    font-size: 0.86rem;
+    color: var(--color-gray-dark);
+}
+
+.bold{
+    font-weight: 600;
+}
+
+small {
+    font-weight: 300;
+    font-size: 0.77rem;
+}
+
+.text-muted {
+    color: var(--color-gray-light);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.purple {
+    color: var(--color-purple);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
+}
+
+.bg-danger {
+    background-color: var(--color-danger);
+    box-shadow: 0 0.8rem 0.8rem var(--color-danger-light-light);
+}
+
+.bg-success {
+    background-color: var(--color-success);
+    box-shadow: 0 0.8rem 0.8rem var(--color-success-light-light);
+}
+
+.bg-purple {
+    background-color: var(--color-purple);
+    box-shadow: 0 0.8rem 0.8rem var(--color-purple-light-light);
+}
+
+.bg-dark {
+    background: #27282f;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.bg-purple-light {
+    background: var(--color-purple-light);
+}
+
+.bg-danger-light {
+    background: var(--color-danger-light);
+}
+
+.bg-primary-light {
+    background: var(--color-primary-light);
+}
+
+.bg-success-light {
+    background: var(--color-success-light);
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-white);
+}
+
+.btn-warning{
+    background: var(--color-warning);
+    transition: all .4s ease;
+}
+.btn-warning:hover{
+    background: var(--color-warning-hover);
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    transition: all .4s ease;
+}
+.btn-primary:hover{
+    background: var(--color-primary-bootstrap);
+}
+
+.btn-danger{
+    background: var(--color-danger);
+    transition: all .4s ease;
+}
+.btn-danger:hover{
+    background: red;
+}
+.btn-info{
+    background: var(--color-info);
+    transition: all .4s ease;
+}
+.btn-info:hover{
+    background: var(--color-info-hover);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: all .3s ease;
+}
+
+/* ================== nav ========================== */
+nav {
+    background-color: var(--color-white);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background: var(--color-light);
+    min-height: 100vh;
+    color: var(--color-dark);
+}
+
+.navbar-brand span{
+    color: var(--color-white);
+}
+
+.logo{
+    width: 50px;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 500;
+    color: var(--color-white)
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--color-light)
+}
+
+aside{
+    padding-top: 10px;
+}
+
+aside ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.infos .card{
+    flex-direction: row;
+    max-height: 7rem;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.infos .card img{
+    width: 5rem;
+    object-fit: cover;
+}
+
+.info h1{
+    font-weight: 600;
+}
+
+section{
+    position: relative;
+    padding: 20px 0;
+}
+
+section .title{
+    position: absolute;
+    top: -15px;
+    background: var(--color-info);
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.plus-info .header  a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plus-info h2{
+    font-weight: 600;
+}
+.plus-info .actualites{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+}
+
+.plus-info .actualites .card img{
+    height  : 9rem;
+    object-fit: cover;
+}
+
+.plus-info .actualites .card{
+    height  : 18rem;
+    overflow: hidden;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
